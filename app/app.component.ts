@@ -11,7 +11,7 @@ export class AppComponent {
         if (this.counter > 0) {
             return this.counter + " taps left";
         } else {
-            return "Hello Chacha! \nYou are ready to start building! \n Welcome To NativeScript";
+            return "Hello Chacha! \nYou are ready to start building! \n This is awesome！";
         }
     }
 
