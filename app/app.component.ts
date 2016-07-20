@@ -1,21 +1,32 @@
-import {Component} from "@angular/core";
+import {Component,OnInit} from '@angular/core';
+import {Displayer} from './Displayer/displayer.component';
+import {Keyboard} from './Keyboard/keyboard.component';
 
 @Component({
-    selector: "my-app",
-    templateUrl: "app.component.html",
+  selector: 'app',
+  template: `
+    <GridLayout rows="auto,*" columns="*">
+      <Displayer [input]="counter"></Displayer>
+      <Keyboard row="1" [onKeyBoardClicked]="onKeyBoardClicked"></Keyboard>
+    </GridLayout>
+  `,
+  directives: [Keyboard,Displayer]
 })
-export class AppComponent {
-    public counter: number = 10;
 
-    public get message(): string {
-        if (this.counter > 0) {
-            return this.counter + " taps left";
-        } else {
-            return "Hello Chacha! \nYou are ready to start building! \n This is awesome！";
-        }
-    }
+export class AppComponent implements OnInit{
+  public counter: string = '';
 
-    public onTap() {
-        this.counter--;
+  ngOnInit() {
+    this.onKeyBoardClicked = this.onKeyBoardClicked.bind(this);
+  }
+
+  public onKeyBoardClicked(text: string):void {
+    switch(text.toUpperCase()) {
+      case 'C' :
+        this.counter = '';
+        break;
+      default:
+        this.counter += text;
     }
+  }
 }

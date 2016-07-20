@@ -1,0 +1,71 @@
+<GridLayout row="1" columns="1*,1*,1*,1*"
+   rows="1*,1*,1*,1*,1*">
+
+   <!--第一行-->
+   <GridLayout row="0" col="0">
+     <nsbutton text="C" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+   <GridLayout row="0" col="1">
+     <nsbutton text="+/-" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+   <GridLayout row="0" col="2">
+     <nsbutton text="%"></nsbutton>
+   </GridLayout>
+   <GridLayout row="0" col="3" style="color:#fff;">
+     <nsbutton text="÷" normalBg="#F27F26" activeBg="#B65F1C" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+
+   <!--第二行-->
+   <GridLayout row="1" col="0">
+     <nsbutton text="7" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+   <GridLayout row="1" col="1">
+     <nsbutton text="8" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+   <GridLayout row="1" col="2">
+     <nsbutton text="9"></nsbutton>
+   </GridLayout>
+   <GridLayout row="1" col="3" style="color:#fff;">
+     <nsbutton text="x" normalBg="#F27F26" activeBg="#B65F1C" [onBtnClicked]="onBtnClicked"></nsbutton>
+   </GridLayout>
+
+    <!--第三行-->
+    <GridLayout row="2" col="0">
+      <nsbutton text="4" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="2" col="1">
+      <nsbutton text="5" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="2" col="2">
+      <nsbutton text="6" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="2" col="3" style="color:#fff;">
+      <nsbutton text="-" normalBg="#F27F26" activeBg="#B65F1C" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+
+    <!--第四行-->
+    <GridLayout row="3" col="0">
+      <nsbutton text="1" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="3" col="1">
+      <nsbutton text="2" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="3" col="2">
+      <nsbutton text="3" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="3" col="3" style="color:#fff;">
+      <nsbutton text="+" normalBg="#F27F26" activeBg="#B65F1C" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+
+    <!--第五行-->
+    <GridLayout row="4" col="0" colSpan="2">
+      <nsbutton text="0" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="4" col="2">
+      <nsbutton text="." [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    <GridLayout row="4" col="3" style="color:#fff;">
+      <nsbutton text="=" normalBg="#F27F26" activeBg="#B65F1C" [onBtnClicked]="onBtnClicked"></nsbutton>
+    </GridLayout>
+    
+</GridLayout>
