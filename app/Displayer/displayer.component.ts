@@ -18,7 +18,7 @@ import {StackLayout} from 'ui/layouts/stack-layout';
       <Label #displayer class="displayer large" [text]="input"></Label>
     </StackLayout>
   `,
-  styleUrls: ["Displayer/displayer.css"]
+  styleUrls: ['Displayer/displayer.css']
 })
 export class Displayer implements AfterViewInit,OnChanges{
   @Input('input') input: string;

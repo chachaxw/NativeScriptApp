@@ -6,19 +6,10 @@ import{
   Input,
   OnInit
 } from "@angular/core";
-import {
-  Label
-} from 'ui/label';
-import {
-  GridLayout
-} from 'ui/layouts/grid-layout';
-import {
-  GestureTypes,
-  TouchGestureEventData
-} from 'ui/gestures';
-import {
-  Color
-} from 'color';
+import {Label} from 'ui/label';
+import {GridLayout} from 'ui/layouts/grid-layout';
+import {GestureTypes,TouchGestureEventData} from 'ui/gestures';
+import {Color} from 'color';
 
 @Component({
   selector: 'nsbutton',

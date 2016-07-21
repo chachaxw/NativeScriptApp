@@ -58,7 +58,7 @@ var Displayer = (function () {
         core_1.Component({
             selector: 'displayer',
             template: "\n    <StackLayout class=\"stacklayout\" row=\"0\" #wrapper>\n      <Label #displayer class=\"displayer large\" [text]=\"input\"></Label>\n    </StackLayout>\n  ",
-            styleUrls: ["Displayer/displayer.css"]
+            styleUrls: ['Displayer/displayer.css']
         }), 
         __metadata('design:paramtypes', [])
     ], Displayer);
