@@ -1,0 +1,12 @@
+.keyboard-item {
+  border-width: 0.5;
+  border-color: rgb(123,123,123);
+  font-family: monospace;
+  font-size: 25;
+  height: 120;
+  vertical-align: middle;
+}
+Label {
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,13 +1,21 @@
-import {Component,Input,OnInit} from "@angular/core";
-import {NSButton} from '../NSButton/nsbutton.component';
+import {
+  Component,
+  Input,
+  OnInit
+} from '@angular/core';
+import {
+  NSButton
+} from '../NSButton/nsbutton.component';
 
 @Component({
-  selector: "keyboard",
-  templateUrl: "Keyboard/keyboard.component.html",
-  directives: [NSButton],
-  styleUrls: ["Keyboard/keyboard.css"],
+  selector:'keyboard',
+  templateUrl:'Keyboard/keyboard.html',
+  styleUrls:['Keyboard/keyboard.css'],
+  directives:[NSButton],
 })
+
 export class Keyboard implements OnInit{
+
   @Input('onKeyBoardClicked') onKeyBoardClicked: Function;
 
   ngOnInit() {

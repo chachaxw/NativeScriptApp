@@ -55,7 +55,8 @@ var NSButton = (function () {
     NSButton = __decorate([
         core_1.Component({
             selector: 'nsbutton',
-            template: "\n    <Label class=\"keyboard-item\"\n      #nsbutton\n      [text]=\"text\"\n      (touch)=\"onTouch($event)\"></Label>",
+            template: "\n    <Label class=\"keyboard-item\"\n      #nsbutton\n      [text]=\"text\"\n      (touch)=\"onTouch($event)\">\n    </Label>",
+            styleUrls: ['NSButton/nsbutton.css']
         }), 
         __metadata('design:paramtypes', [])
     ], NSButton);

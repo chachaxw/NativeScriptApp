@@ -11,13 +11,13 @@ var Displayer = (function () {
         this.setIOSLabelAutoFont(this.displayer);
     };
     Displayer.prototype.ngOnChanges = function (changes) {
-        //android only
+        //Android Only
         if (platform_1.device.os !== platform_1.platformNames.android)
             return;
         for (var propName in changes) {
-            var c = changes[propName];
-            var cur = JSON.stringify(c.currentValue);
-            var prev = JSON.stringify(c.previousValue);
+            var chng = changes[propName];
+            var cur = JSON.stringify(chng.currentValue);
+            var prev = JSON.stringify(chng.previousValue);
             console.log('current ' + cur + ' previous ' + prev);
             if (this.displayer && this.wrapper) {
                 var paint = this.displayer.android.getPaint();

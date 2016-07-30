@@ -17,7 +17,9 @@ import {Color} from 'color';
     <Label class="keyboard-item"
       #nsbutton
       [text]="text"
-      (touch)="onTouch($event)"></Label>`,
+      (touch)="onTouch($event)">
+    </Label>`,
+  styleUrls: ['NSButton/nsbutton.css']
 })
 export class NSButton implements AfterViewInit{
   @ViewChild('nsbutton') nsBtnRef: ElementRef;

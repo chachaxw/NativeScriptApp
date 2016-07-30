@@ -14,14 +14,32 @@ var AppComponent = (function () {
             case 'C':
                 this.counter = '';
                 break;
+            case '+':
+                this.counter = this.counter;
+                break;
+            case '-':
+                this.counter = this.counter;
+                break;
+            case 'x':
+                this.counter = this.counter;
+                break;
+            case '÷':
+                this.counter = this.counter;
+                break;
+            case '=':
+                this.counter = 'chacha';
+                break;
+            case '.':
+                this.counter += text;
+                break;
             default:
                 this.counter += text;
         }
     };
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'app',
-            template: "\n    <GridLayout rows=\"auto,*\" columns=\"*\">\n      <Displayer [input]=\"counter\"></Displayer>\n      <Keyboard row=\"1\" [onKeyBoardClicked]=\"onKeyBoardClicked\"></Keyboard>\n    </GridLayout>\n  ",
+            selector: 'calculator',
+            template: "\n    <GridLayout rows=\"auto,*\" columns=\"*\">\n      <!--Displayer-->\n      <displayer [input]=\"counter\" row=\"0\"></displayer>\n      <!--Keyboard-->\n      <keyboard row=\"1\" [onKeyBoardClicked]=\"onKeyBoardClicked\"></keyboard>\n    </GridLayout>\n  ",
             directives: [keyboard_component_1.Keyboard, displayer_component_1.Displayer]
         }), 
         __metadata('design:paramtypes', [])
